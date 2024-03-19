@@ -1,0 +1,154 @@
+.container-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+html {
+  font-family: "Lato", "Roboto";
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+h1 {
+  color: #00FF00;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+input[type="text"] {
+  border: 1px solid #00FF00;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input::placeholder {
+  color: #00FF00;
+}
+
+.container-quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.question {
+  width: 100%;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 100px;
+  margin: 50px auto;
+}
+
+.btn2 {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.6em 2em;
+  border: #00FF00 solid 0.15em;
+  border-radius: 0.25em;
+  color: #00FF00;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+}
+
+.btn2 p {
+  z-index: 1;
+}
+
+.btn2:hover {
+  color: #333333;
+}
+
+.btn2:active {
+  border-color: teal;
+}
+
+.btn2::after, .btn2::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: #00FF00;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.btn2::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.btn2::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.btn2:hover::before {
+  transform: translateX(-1em);
+}
+
+.btn2:hover::after {
+  transform: translateX(1em);
+}
+
+.btn2:active::before,
+.btn2:active::after {
+  background: teal;
+}
+
+
+.result {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+select {
+  border: 1px solid #00FF00;
+  border-radius: 5px;
+  padding: 5px;
+  width: 289px;
+  text-align: center;
+}
+
+option {
+  color: #333333;
+}
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+input[name="8"] {
+  visibility: hidden;
+  position: absolute;
+}
+ 
+input[name="8"]:checked + img {
+  border: 5px solid #00FF00;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}

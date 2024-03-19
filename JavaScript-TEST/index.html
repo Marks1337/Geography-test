@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--1. С 1 ОТВЕТОМ 
+      2. С НЕСКОЛЬКИМИ ОТВЕТАМИ 
+      3. ОТВЕТ ПО НАЖАТИЮ КАРТИНКИ
+      4. СОРТИРОВКА  
+      5. ВПИСАТЬ СЛОВО ИЛИ ЧИСЛО
+      6. НАЖАТИЕ НА КАРТИНКЕ   -->
+    <header>
+      <div class="container-header">
+        <h1>ТЕСТ ПО ГЕОГРАФИИ</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container-quiz">
+        <div class="question">
+          <h2>1. Какой из этих городов является столицей Франции?</h2>
+          <div class="answers">
+            <label for="1">
+              <input type="radio" id="1" name="1" />
+              <span>1. Лондон</span>
+            </label>
+            <label for="2">
+              <input type="radio" id="2" name="1" />
+              <span>2. Париж</span>
+            </label>
+            <label for="3">
+              <input type="radio" id="3" name="1" />
+              <span>3. Рим</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h2>2. Какие из перечисленных океанов окружают Австралию?</h2>
+          <div class="answers">
+            <label for="4">
+              <input type="checkbox" id="4" name="2" />
+              <span>1. Тихий океан</span>
+            </label>
+            <label for="5">
+              <input type="checkbox" id="5" name="2" />
+              <span>2. Индийский океан</span>
+            </label>
+            <label for="6">
+              <input type="checkbox" id="6" name="2" />
+              <span>3. Северный Ледовитый океан</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h2>3. Какой самый высокий горный хребет в мире?</h2>
+          <div class="answers">
+            <label for="7">
+              <input type="radio" id="7" name="3" />
+              <span>1. Гималаи</span>
+            </label>
+            <label for="8">
+              <input type="radio" id="8" name="3" />
+              <span>2. Альпы</span>
+            </label>
+            <label for="9">
+              <input type="radio" id="9" name="3" />
+              <span>3. Анды</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h2>4. В каком году произошло открытие Америки Колумбом?</h2>
+          <input
+            type="text"
+            name="year"
+            placeholder="Ответ введите числом"
+            value=""
+          />
+        </div>
+
+        <div class="question">
+          <h2>5. Укажите страны, через которые проходит экватор.</h2>
+          <div class="answers">
+            <label for="10">
+              <input type="checkbox" id="10" name="5" />
+              <span>1. Бразилия</span>
+            </label>
+            <label for="11">
+              <input type="checkbox" id="11" name="5" />
+              <span>2. Кения</span>
+            </label>
+            <label for="12">
+              <input type="checkbox" id="12" name="5" />
+              <span>3. Индонезия</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h2>
+            6. Расположите города по численности населения в порядке убывания:
+          </h2>
+          <div class="select-box">
+            <select name="city" id="city-select">
+              <option value="">Выберите город</option>
+              <option value="Tokyo">Токио</option>
+              <option value="Moscow">Москва</option>
+              <option value="NewYork">Нью-Йорк</option>
+            </select>
+            <select name="city" id="city-select">
+              <option value="">Выберите город</option>
+              <option value="Tokyo">Токио</option>
+              <option value="Moscow">Москва</option>
+              <option value="NewYork">Нью-Йорк</option>
+            </select>
+            <select name="city" id="city-select">
+              <option value="">Выберите город</option>
+              <option value="Tokyo">Токио</option>
+              <option value="Moscow">Москва</option>
+              <option value="NewYork">Нью-Йорк</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="question">
+          <h2>
+            7. На каком континенте находится самая крупная пустыня в мире -
+            Сахара?
+          </h2>
+          <div class="answers">
+            <label for="13">
+              <input type="radio" id="13" name="7" />
+              <span>1. Африка</span>
+            </label>
+            <label for="14">
+              <input type="radio" id="14" name="7" />
+              <span>2. Австралия</span>
+            </label>
+            <label for="15">
+              <input type="radio" id="15" name="7" />
+              <span>3. Южная Америка</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h2>8. Какое изображение на карте представляет континент Африка?</h2>
+          <div class="img-container">
+            <label for="africa">
+              <input type="radio" id="africa" name="8" />
+              <img
+                src="img/africa.png"
+                alt="Африка"
+                width="300px"
+                height="228px"
+              />
+            </label>
+            <label for="australia">
+              <input type="radio" id="australia" name="8" />
+              <img
+                src="img/australia.png"
+                alt="Австралия"
+                width="300px"
+                height="228px"
+              />
+            </label>
+            <label for="eurasia">
+              <input type="radio" id="eurasia" name="8" />
+              <img
+                src="img/eurasia.jpg"
+                alt="Евразия"
+                width="300px"
+                height="228px"
+              />
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h2>9. Нажмите на место, где расположен Эверест.</h2>
+          <img
+            src="img/everest.png"
+            id="imgQuestion"
+            alt="Карта с горами"
+            width="1000px"
+          />
+        </div>
+
+        <div class="question">
+          <h2>10. Какая из перечисленных стран имеет выход к морю?</h2>
+          <div class="answers">
+            <label for="16">
+              <input type="radio" id="16" name="10" />
+              <span>1. Россия</span>
+            </label>
+            <label for="17">
+              <input type="radio" id="17" name="10" />
+              <span>2. Боливия</span>
+            </label>
+            <label for="18">
+              <input type="radio" id="18" name="10" />
+              <span>3. Швейцария</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h2>
+            11. В каком году была проведена первая олимпиада нового времени?
+          </h2>
+          <input type="text" name="year" placeholder="Ответ введите числом" />
+        </div>
+
+        <div class="question">
+          <h2>12. Какой из перечисленных городов является столицей Японии?</h2>
+          <div class="answers">
+            <label for="19">
+              <input type="radio" id="19" name="12" />
+              <span>1. Сеул</span>
+            </label>
+            <label for="20">
+              <input type="radio" id="20" name="12" />
+              <span>2. Пекин</span>
+            </label>
+            <label for="21">
+              <input type="radio" id="21" name="12" />
+              <span>3. Токио</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h2>13. Какая из перечисленных рек является самой длинной в мире?</h2>
+          <div class="answers">
+            <label for="22">
+              <input type="radio" id="22" name="13" />
+              <span>1. Нил</span>
+            </label>
+            <label for="23">
+              <input type="radio" id="23" name="13" />
+              <span>2. Амазонка</span>
+            </label>
+            <label for="24">
+              <input type="radio" id="24" name="13" />
+              <span>3. Янцзы</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h2>
+            14. Укажите страны, через которые проходит Великая Гималайская
+            Горная Система.
+          </h2>
+          <div class="answers">
+            <label for="25">
+              <input type="checkbox" id="25" name="14" />
+              <span>1. Индия</span>
+            </label>
+            <label for="26">
+              <input type="checkbox" id="26" name="14" />
+              <span>2. Непал</span>
+            </label>
+            <label for="27">
+              <input type="checkbox" id="27" name="14" />
+              <span>3. Китай</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h2>
+            15. Какой из перечисленных островов является самым крупным в мире?
+          </h2>
+          <div class="answers">
+            <label for="28">
+              <input type="radio" id="28" name="15" />
+              <span>1. Мадагаскар</span>
+            </label>
+            <label for="29">
+              <input type="radio" id="29" name="15" />
+              <span>2. Гавайи</span>
+            </label>
+            <label for="30">
+              <input type="radio" id="30" name="15" />
+              <span>3. Гренландия</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="button">
+        <a onClick="window.location.reload()"
+          ><button class="btn2"><p>Сбросить ответы</p></button></a
+        >
+        <button type="button" class="btn2" id="button-res">
+          <p>Узнать результат</p>
+        </button>
+      </div>
+      <div class="result">Результат: 0/15</div>
+    </footer>
+    <script src="main.js" defer></script>
+  </body>
+</html>
